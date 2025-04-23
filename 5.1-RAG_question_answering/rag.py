@@ -13,6 +13,7 @@ from langchain.docstore.document import Document
 from langchain_chroma import Chroma
 from operator import itemgetter
 from typing import List
+import time
 
 from sqlalchemy.orm import query_expression
 
@@ -219,13 +220,14 @@ def answer_query(query, collection):
     return rag_chain_w_citations.invoke(query)
 
 if __name__ == "__main__":
-    import glob
-    from schema import Citation
+    # import glob
+    # from schema import Citation
     # pdf_files = glob.glob('/media/athul/CAD3-F0DD/courses/analytics vidya/5. RAG Systems Essentials/RAG Project Dataset/*.pdf')
     # for fp in pdf_files:
     #     add_document(fp,'test_collection')
-    query = "What is attention mechanism in transformers"
+    query = "What are the main components of a RAG model, and how do they interact?"
     answer = answer_query(query,'test_collection')
     print(answer.keys())
     print(answer['answer'])
-    print(answer['context'])
+    # print(answer['context'])
+    print(answer['citations'])

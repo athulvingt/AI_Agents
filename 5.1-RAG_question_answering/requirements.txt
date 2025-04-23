@@ -5,3 +5,5 @@ langchain-chroma
 jq
 pymupdf
 redis
+flask
+markdown
