@@ -1,0 +1,1 @@
+add the openai API key to the environment variables
