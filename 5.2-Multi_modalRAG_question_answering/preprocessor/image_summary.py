@@ -29,7 +29,7 @@ def image_summarize(img_base64,chat_model, prompt):
     return msg.content
 
 
-def generate_img_summaries(path):
+def generate_img_summaries(path, chat_model):
     """
     Generate summaries and base64 encoded strings for images
     path: Path to list of .jpg files extracted by Unstructured
@@ -55,6 +55,6 @@ def generate_img_summaries(path):
             img_path = os.path.join(path, img_file)
             base64_image = encode_image(img_path)
             img_base64_list.append(base64_image)
-            image_summaries.append(image_summarize(base64_image, prompt))
+            image_summaries.append(image_summarize(base64_image,chat_model, prompt))
 
     return img_base64_list, image_summaries
