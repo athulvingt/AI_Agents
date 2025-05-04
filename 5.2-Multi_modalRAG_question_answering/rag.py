@@ -73,10 +73,6 @@ def add_document(file_path, collection):
     os.makedirs(img_path, exist_ok=True)
     docs, tables = preprocessor.chunk_file(file_path, img_path)
     text_summaries, text_docs,  table_summaries, table_docs =  preprocessor.generate_text_table_summaries(docs,tables,chatgpt)
-    # print(text_summaries)
-    # print(text_docs)
-    # print(table_summaries)
-    # print(table_docs)
     imgs_base64, image_summaries = preprocessor.generate_img_summaries(img_path,chatgpt)
     retriever  = get_retriever(collection)
     # Add texts, tables, and images
@@ -125,6 +121,6 @@ if __name__ == "__main__":
     # pdf_files = glob.glob('/home/athul/workspace/AI_Agents/data/*.pdf')
     # for fp in pdf_files:
     #     add_document(fp,'test_collection')
-    # query = "Tell me detailed statistics of the top 5 years with largest wildfire acres burned"
-    # answer = answer_query(query,'test_collection')
+    query = "Tell me detailed statistics of the top 5 years with largest wildfire acres burned"
+    answer = answer_query(query,'test_collection')
     # print(answer.keys())
