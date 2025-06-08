@@ -1,0 +1,17 @@
+.form-container {
+    max-width: 960px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.upload-section {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.textbox {
+    height: 400px;           /* Enough for 1 paragraph */
+    max-height: 400px;       /* Prevent growing beyond this */
+    overflow-y: auto;        /* Scrollbar appears when content exceeds */
+    resize: vertical;        /* Optional: lets user resize manually */
+}
