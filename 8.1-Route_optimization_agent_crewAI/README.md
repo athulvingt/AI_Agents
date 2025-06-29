@@ -31,6 +31,7 @@ This system consists of two specialized agents:
 
 - Python 3.8+
 - Google Maps API key
+- Openai API key
 - Required packages (see installation section)
 
 ## 🔧 Installation
