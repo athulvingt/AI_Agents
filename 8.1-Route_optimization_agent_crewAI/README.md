@@ -188,13 +188,6 @@ results = tool._run(locations)  # hourly_analysis=True by default, uses only fut
 5. Submit a pull request
 
 
-## 🆘 Support
-
-For issues and questions:
-1. Check the documentation
-2. Review existing issues
-3. Create a new issue with detailed information
-
 ## 🔮 Future Enhancements
 
 - [ ] Multi-vehicle routing support
