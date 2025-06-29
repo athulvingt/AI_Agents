@@ -37,13 +37,13 @@ This system consists of two specialized agents:
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/athulvingt/AI_Agents
 cd 8.1-Route_optimization_agent_crewAI
 ```
 
 2. Install dependencies:
 ```bash
-pip install crewai googlemaps python-dotenv
+pip install -r requirements.txt
 ```
 
 3. Set up your Google Maps API key:
@@ -187,9 +187,6 @@ results = tool._run(locations)  # hourly_analysis=True by default, uses only fut
 4. Add tests if applicable
 5. Submit a pull request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 🆘 Support
 
