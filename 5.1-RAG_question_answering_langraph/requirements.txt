@@ -1,0 +1,11 @@
+langchain
+langchain-openai
+langchain-community
+langchain-chroma
+langgraph
+jq
+pymupdf
+redis
+flask
+markdown
+python-dotenv
